@@ -5,7 +5,7 @@
  * Lists the title of all movies where at least 2 actors were also in 'AMERICAN CIRCUS'.
  * (You may choose to either include or exclude the movie 'AMERICAN CIRCUS' in the results.)
  */
-select title, count(actor_id)
+select title
 from film
 join film_actor using (film_id)
 where actor_id in (
